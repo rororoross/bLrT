@@ -59,9 +59,19 @@ body {
     font-weight: 300;
     outline:none;
 }
+#main-nav {
+	position: fixed;
+	top: 400px;
+	left: 0px;
+}
 
-#tabs-1, #tabs-2, #tabs-3 {
+#tabs-1, #tabs-3 {
 	width: 60%;
+	float: right;
+}
+
+#tabs-2 {
+	width: 75%;
 	float: right;
 }
 
@@ -208,8 +218,10 @@ body {
 /* Navigation */
 
 .process-nav {
-	position: absolute;
-	top: 24px;
+	position: fixed;
+	padding: 24px;
+	background-color: white;
+	z-index: 99999;
 }
 
 .process-header {
@@ -219,6 +231,16 @@ body {
 .process-subheader {
 	padding-top: 12px;
 	padding-left: 0.3em;
+}
+
+.process-subheader a {
+	text-decoration: none;
+	color: black;
+}
+
+.process-subheader a:hover {
+	font-weight: 700;
+	transition: all 0.25s;
 }
 
 .process-header li {
@@ -303,13 +325,50 @@ body {
 	display: block;
 }
 
-#community-search-phase-one {
-	margin-top: 200px;
-	height: 1000px;
-	background-color: red;
+#community-search-phase-one, #community-search-phase-two, #community-search-phase-three {
+	margin-top: 300px;
 	width: 100%;
-	clear: both;
+	padding-bottom: 200px;
+	padding-top: 200px;
 }
+
+.community-search-img {
+	float: left;
+	width: 45%;
+}
+
+.property-imp {
+	float: left;
+	line-height: 2em;
+	width: 40%;
+	padding-right: 40px;
+	padding-top: 100px;
+}
+
+.property-imp a {
+	text-align: center;
+	border: 1px solid black;
+	height: 32px;
+	width: 150px;
+	-webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.44);
+	-moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.44);
+	box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.44);
+	padding: 10px 22px 16px 22px;
+	margin: 0 auto;
+	display: block;
+	background-color: white;
+	text-decoration: none;
+	color: black;
+	font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
 
 
 
