@@ -1,0 +1,349 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+}
+
+.top-bar {
+	width: 100%;
+	height: 8.6vw;
+	background-color: black;
+}
+
+.column-1, .column-2 {
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+
+.column-1 {
+	background-color: white;
+}
+
+.column-2 {
+	
+}
+
+.clearfix {
+	clear: both;
+}
+
+.bar {
+	height: 1.8vw;
+	width: 70%;
+	background-color: #666;
+	margin: 0 auto;
+	margin-top: 3.5vw;
+}
+
+.squares {
+	margin: 0 auto;
+	display: block;
+	margin-top: 2.5vw;
+	clear: both;
+	margin-left: 9.5vw;
+}
+
+.square {
+	width: 5vw;
+	height: 5vw;
+	background-color: #333333;
+	float: left;
+}
+
+
+.square:nth-child(2){
+	-webkit-animation-delay: 0.2s;
+	margin-left: 1.2vw;
+}
+.square:nth-child(3){
+	-webkit-animation-delay: 0.5s;
+	margin-left: 1.2vw;
+}
+.square:nth-child(4){
+	-webkit-animation-delay: 0.3s;
+	margin-left: 1.2vw;
+}
+.square:nth-child(5){
+	-webkit-animation-delay: 0.8s;
+	margin-left: 1.2vw;
+}
+
+#second-bar {
+	margin-top: 2.5vw;
+}
+
+
+
+.sliders {
+	margin: 0 auto;
+	display: block;
+	margin-top: 2.5vw;
+	clear: both;
+	width: 70%;
+}
+
+.slider {
+	margin-top: 2vw;
+}
+
+.slider-square {
+	width: 1.6vw;
+	height: 1.6vw;
+	background-color: #999999;
+	float: left;
+}
+
+.slider-square-right {
+	margin-left: 0.5vw;
+}
+
+.slider-bar {
+	width: 86.25%;
+	height: 0.6vw;
+	background-color: #999999;
+	float: left;
+	margin-left: 0.5vw;
+	margin-top: 0.5vw;
+	-webkit-transition: width 1s linear 2s;
+}
+
+.large-grey-box {
+	width: 86.25%;
+	height: 31vw;
+	background-color: #cccccc;
+	margin: 0 auto;
+	display: block;
+	margin-top: 3vw;
+}
+
+
+
+
+
+/* Column 2 */
+
+
+.large-grey-box-2 {
+	width: 100%;
+	height: 47vw;
+	background-color: #cccccc;
+}
+
+.lil-margin {
+	margin-top: 1vw;
+}
+
+.bar-small {
+	height: 1.8vw;
+	width: 35%;
+	background-color: #666;
+	margin: 0 auto;
+	margin-top: 3.5vw;
+}
+
+/* Animations */
+
+ 
+.width-expander-2{
+width: 0;
+ -webkit-animation:width-expander-2 ease-in-out 1;  /* call our keyframe named width-expander, use animattion ease-in and repeat it only 1 time */
+ -moz-animation:width-expander-2 ease-in-out 1;
+ animation:width-expander-2 ease-in-out 1;
+ 
+ -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ -moz-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
+ 
+ -webkit-animation-duration:01.25s;
+ -moz-animation-duration:01.25s;
+ animation-duration:01.25s;
+}
+ 
+
+/* width-expander-2 */
+@-webkit-keyframes width-expander-2 {
+  0%   { width: 0; }
+  80%  { width: 86.25%; }
+  100% { width: 86.25%; }
+}
+@-moz-keyframes width-expander-2 {
+  0%   { width: 0; }
+  80%  { width: 86.25%; }
+  100% { width: 86.25%; }
+}
+@-o-keyframes width-expander-2 {
+  0%   { width: 0; }
+  80%  { width: 86.25%; }
+  100% { width: 86.25%; }
+}
+@keyframes width-expander-2 {
+  0%   { width: 0; }
+  80%  { width: 86.25%; }
+  100% { width: 86.25%; }
+}
+
+.width-expander-3{
+width: 0;
+ -webkit-animation:width-expander-3 ease-in-out 1;  /* call our keyframe named width-expander, use animattion ease-in and repeat it only 1 time */
+ -moz-animation:width-expander-3 ease-in-out 1;
+ animation:width-expander-3 ease-in-out 1;
+ 
+ -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ -moz-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
+ 
+ -webkit-animation-duration:01.25s;
+ -moz-animation-duration:01.25s;
+ animation-duration:01.25s;
+}
+ 
+
+/* width-expander-3 */
+@-webkit-keyframes width-expander-3 {
+  0%   { width: 0; }
+  60%  { width: 60%; }
+  80%  { width: 0%; }
+  100% { width: 86.25%; }
+}
+@-moz-keyframes width-expander-3 {
+  0%   { width: 0; }
+  60%  { width: 60%; }
+  80%  { width: 0%; }
+  100% { width: 86.25%; }
+}
+@-o-keyframes width-expander-3 {
+  0%   { width: 0; }
+  60%  { width: 60%; }
+  80%  { width: 0%; }
+  100% { width: 86.25%; }
+}
+@keyframes width-expander-3 {
+  0%   { width: 0; }
+  60%  { width: 60%; }
+  80%  { width: 0%; }
+  100% { width: 86.25%; }
+}
+
+
+
+
+
+
+
+@keyframes scale {
+from {
+    width:0%;
+}
+to {
+    width:5vw;
+}}
+@-moz-keyframes scale { /* Firefox */
+from {
+    width:0%;
+}
+to {
+    width:5vw;
+}}
+@-webkit-keyframes scale { /* Safari and Chrome */
+from {
+    width:0%;
+}
+to {
+    width:5vw;
+}}
+@-o-keyframes scale { /* Opera */
+from {
+    width:0%;
+}
+to {
+    width:5vw;
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 760px) {
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
