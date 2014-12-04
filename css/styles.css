@@ -169,7 +169,7 @@ body {
 	padding: 14px 34px 14px 42px;
 }
 
-#tester {
+#tester, #tester-2, #tester-3, #tester-4 {
 	display: none;
 }
 
@@ -260,10 +260,9 @@ body {
 
 /* Content */
 
-#tabs-4 {
+#tabs-4, #tabs-5, #tabs-6, #tabs-7 {
 	width: 75%;
 	float: right;
-
 }
 
 .column-1, .column-2 {

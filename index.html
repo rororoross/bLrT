@@ -24,7 +24,7 @@
 			return false;
 		})
 
-		jQuery('#com-link').click(function() { // bind click event to link
+		jQuery('.com-link').click(function() { // bind click event to link
 			jQuery( "#tabs" ).tabs({ active: 1 });
 			return false;
 		})
@@ -34,8 +34,23 @@
 			return false;
 		})
 
-		jQuery('#location-search').click(function() { // bind click event to link
+		jQuery('.location-search').click(function() { // bind click event to link
 			jQuery( "#tabs" ).tabs({ active: 3 });
+			return false;
+		})
+
+		jQuery('.property-search').click(function() { // bind click event to link
+			jQuery( "#tabs" ).tabs({ active: 4 });
+			return false;
+		})
+
+		jQuery('.agent-link').click(function() { // bind click event to link
+			jQuery( "#tabs" ).tabs({ active: 5 });
+			return false;
+		})
+
+		jQuery('.enhanced-link').click(function() { // bind click event to link
+			jQuery( "#tabs" ).tabs({ active: 6 });
 			return false;
 		})
 	});
@@ -53,6 +68,9 @@
 			<li><a id="process" href="#tabs-2">Process</a></li>
 			<li><a id="solution" href="#tabs-3">Solution</a></li>
 			<li><a id="tester" href="#tabs-4">tab 4</a></li>
+			<li><a id="tester-2" href="#tabs-5">tab 5</a></li>
+			<li><a id="tester-3" href="#tabs-6">tab 6</a></li>
+			<li><a id="tester-4" href="#tabs-7">tab 4</a></li>
 		</ul>
 	</nav>
 
@@ -92,10 +110,10 @@
 				<nav class="process-nav">
 					<ul class="process-header">
 						<li>Community Search</li>
-						<li><a id="location-search" href="#tabs-4">Location Search</a></li>
-						<li>Property Search</li>
-						<li>Agent Listings</li>
-						<li>Enhanced Listings</li>
+						<li><a class="location-search" href="#tabs-4">Location Search</a></li>
+						<li><a class="property-search" href="#tabs-5">Property Search</a></li>
+						<li><a class="agent-link" href="#tabs-6">Agent Listings</a></li>
+						<li><a class="enhanced-link" href="#tabs-7">Enhanced Listings</a></li>
 					</ul>
 
 					<ul class="process-subheader">
@@ -264,11 +282,11 @@
 	<div id="tabs-4" class="animated fadeIn">
 		<nav class="process-nav">
 			<ul class="process-header">
-				<li><a id="com-link" href="#tabs-2">Community Search</a></li>
-				<li><a id="location-search" href="#tabs-4">Location Search</a></li>
-				<li>Property Search</li>
-				<li>Agent Listings</li>
-				<li>Enhanced Listings</li>
+				<li><a class="com-link" href="#tabs-2">Community Search</a></li>
+				<li><a class="location-search" href="#tabs-4">Location Search</a></li>
+				<li><a class="property-search" href="#tabs-5">Property Search</a></li>
+				<li><a class="agent-link" href="#tabs-5">Agent Listings</a></li>
+				<li><a class="enhanced-link" href="#tabs-5">Enhanced Listings</a></li>
 			</ul>
 
 			<ul class="process-subheader">
@@ -306,6 +324,66 @@
 
 
 	</div>
+<!-- End of Location Search (Tabs 4) -->
+
+	<div id="tabs-5" class="animated fadeIn">
+		<nav class="process-nav">
+			<ul class="process-header">
+				<li><a class="com-link" href="#tabs-2">Community Search</a></li>
+				<li><a class="location-search" href="#tabs-4">Location Search</a></li>
+				<li><a class="property-search" href="#tabs-5">Property Search</a></li>
+				<li><a class="agent-link" href="#tabs-5">Agent Listings</a></li>
+				<li><a class="enhanced-link" href="#tabs-5">Enhanced Listings</a></li>
+			</ul>
+
+			<ul class="process-subheader">
+				<li><a href="#property-search-phase-one">Phase One</a></li>
+				<li><a href="#property-search-phase-two">Phase Two</a></li>
+				<li><a href="#property-search-phase-three">Phase Three</a></li>
+			</ul>
+		</nav>
+		aw kewl
+	</div>
+
+	<div id="tabs-6" class="animated fadeIn">
+		<nav class="process-nav">
+			<ul class="process-header">
+				<li><a class="com-link" href="#tabs-2">Community Search</a></li>
+				<li><a class="location-search" href="#tabs-4">Location Search</a></li>
+				<li><a class="property-search" href="#tabs-5">Property Search</a></li>
+				<li><a class="agent-link" href="#tabs-6">Agent Listing6s</a></li>
+				<li><a class="enhanced-link" href="#tabs-7">Enhanced Listings</a></li>
+			</ul>
+
+			<ul class="process-subheader">
+				<li><a href="#property-search-phase-one">Phase One</a></li>
+				<li><a href="#property-search-phase-two">Phase Two</a></li>
+				<li><a href="#property-search-phase-three">Phase Three</a></li>
+			</ul>
+		</nav>
+		aw kewl
+	</div>
+
+	<div id="tabs-7" class="animated fadeIn">
+		<nav class="process-nav">
+			<ul class="process-header">
+				<li><a class="com-link" href="#tabs-2">Community Search</a></li>
+				<li><a class="location-search" href="#tabs-4">Location Search</a></li>
+				<li><a class="property-search" href="#tabs-5">Property Search</a></li>
+				<li><a class="agent-link" href="#tabs-6">Agent Listing7s</a></li>
+				<li><a class="enhanced-link" href="#tabs-7">Enhanced Listings</a></li>
+			</ul>
+
+			<ul class="process-subheader">
+				<li><a href="#property-search-phase-one">Phase One</a></li>
+				<li><a href="#property-search-phase-two">Phase Two</a></li>
+				<li><a href="#property-search-phase-three">Phase Three</a></li>
+			</ul>
+		</nav>
+		aw kewl
+	</div>
+
+
 </div>
 </body>
 <script>
