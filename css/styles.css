@@ -263,6 +263,7 @@ body {
 #tabs-4 {
 	width: 75%;
 	float: right;
+
 }
 
 .column-1, .column-2 {
@@ -367,9 +368,16 @@ body {
 
 
 
+#location-search-phase-one, #location-search-phase-two, #location-search-phase-three {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
 
 
-
+.location-search-img {
+	float: left;
+	width: 45%;
+}
 
 
 
